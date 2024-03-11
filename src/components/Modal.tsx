@@ -30,7 +30,7 @@ export const Modal = ({
   role = "dialog",
 }: ModalProps) => (
   createPortal(
-    <div onClick={onClose} className={`${backdropClassName} ${ open ? "bg-gray-700/50 backdrop-blur-sm visible" : "invisible"}`} aria-hidden={!open} role={role}>
+    <div onClick={onClose} className={`${backdropClassName} ${ open ? "bg-gray-400/50 backdrop-blur-sm visible" : "invisible"}`} aria-hidden={!open} role={role}>
       <div onClick={(e: React.MouseEvent) => e.stopPropagation()} className={`${containerClassName} ${open ? "scale-100 opacity-100" : "scale-125 opacity-0"} ${sizeClasses[size]}`}>
         {children}
       </div>
