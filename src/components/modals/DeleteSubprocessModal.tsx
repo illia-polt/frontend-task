@@ -12,8 +12,8 @@ type ModalProps = {
 
 const confirmMessage = "Are you sure you want to delete this subprocess? This action cannot be undone.";
 
-const modalContentClasses = "max-h-[500px] text-sans text-base text-neutral85 leading-5 whitespace-normal text-left w-full break-words overflow-y-auto";
-const titleClasses = "font-medium text-lg leading-7 text-neutral100 text-left w-full break-words mb-2";
+const modalContentClasses = "max-h-[500px] text-sans text-base text-neutral85 leading-5 whitespace-normal text-left w-full break-words overflow-y-auto font-normal";
+const titleClasses = "font-semibold font-sansSemi text-lg leading-7 text-neutral100 text-left w-full break-words mb-2";
 
 export const DeleteSubprocessModal = ({
   open,
@@ -51,7 +51,7 @@ export const DeleteSubprocessModal = ({
           >
             Delete subprocess {processTitle}
           </h3>
-          <p>{confirmMessage}</p>
+          <p className="text-sm">{confirmMessage}</p>
         </section>
         <div className="grid gap-3 grid-cols-2 mt-3">
           <Button

@@ -6,8 +6,7 @@ export default {
   theme: {
     extend:
     {
-      colors:
-      {
+      colors: {
         red40: '#F8A9B0',
         red110: '#D52533',
         red120: '#BE212E',
@@ -19,6 +18,10 @@ export default {
         neutral85: '#565353',
         neutral100: '#393737',
         gray100: '#F2F4F7',
+      },
+      fontFamily: {
+        sans: ['OpenSans Regular'],
+        sansSemi: ['OpenSans Semibold'],
       },
     },
   },

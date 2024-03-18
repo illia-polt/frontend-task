@@ -9,3 +9,20 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+@layer base {
+  html {
+    font-family: "OpenSans Regular";
+    font-weight: 400;
+  }
+}
+
+@font-face {
+  font-family: "OpenSans Regular";
+  src: url("../public/font/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "OpenSans Semibold";
+  src: url("../public/font/OpenSans-SemiBold.ttf");
+}
